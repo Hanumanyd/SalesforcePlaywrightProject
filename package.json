@@ -1,0 +1,18 @@
+{
+  "name": "salesforce-playwright-framework",
+  "version": "1.0.0",
+  "description": "Salesforce E2E Test Automation Framework using Playwright, TypeScript, and Page Object Model Pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:scenario1": "npx playwright test tests/scenario1-lead-to-opportunity.spec.ts --headed",
+    "test:scenario2": "npx playwright test tests/scenario2-case-status-lifecycle.spec.ts --headed",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
